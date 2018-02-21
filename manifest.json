@@ -1,0 +1,18 @@
+{
+        "name": "Download_ZhiHu_Answer",
+        "version": "0.1",
+        "manifest_version": 2,
+        "browser_action": {
+        "name": "Download_ZhiHu_Answer"
+        },
+        "background":{
+            "scripts":["background.js"]
+        },
+        "content_scripts": [
+            {
+              "matches": ["http://*/*", "https://*/*"],
+              "js": [ "jquery-3.3.1.min.js","turndown.js","contentscript.js"]
+            }
+          ],
+        "permissions":["tabs","http://*/*", "https://*/*"]
+ }
